@@ -1,14 +1,15 @@
 <h1>Listing bookings</h1>
-<%= link_to 'New Booking', new_booking_path %> 
+<%= link_to 'New Booking', new_booking_path %>
+<br> 
 <table border="1">
   <tr>
     <th>Arcade</th>
     <th>Pool</th>
     <th>Foosball</th>
     <th>Time</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Show</th>
+    <th>Edit</th>
+    <th>Delete</th>
   </tr>
 
 <% @counter = 0 %>
@@ -22,14 +23,33 @@
 		<% @atFoosball = "" %>
 		<% @bookings.each do |booking| %>
 			<% if booking.time.to_s == (@counter - 1).to_s %>
-				<%@hasBooking = true%>
-				<%@curBooking = booking%>
 				<% if booking.station == "Arcade" %>
-					<% @atArcade = booking.name  %>
+					<% if @atArcade != "" %> 
+						<% booking.delete %>
+						<font size="10" color="red">TIME IS ALREADY RESERVED!</font> 
+					<% else %>
+						<% @atArcade = booking.name  %>
+						<%@hasBooking = true%>
+                                		<%@curBooking = booking%>
+					<% end %>
 				<% elsif booking.station == "Pool" %>
-					<% @atPool = booking.name %>
+					<% if @atPool != "" %>
+						% booking.delete %>
+                                                <font size="10" color="red">TIME IS ALREADY RESERVED!</font>
+                                        <% else %>
+						<% @atPool = booking.name %>
+						<%@hasBooking = true%>
+                                		<%@curBooking = booking%>
+					<% end %>
 				<% else %>
-					<% @atFoosball = booking.name %>
+					<% if @atFoosball != "" %>
+						% booking.delete %>
+                                                <font size="10" color="red">TIME IS ALREADY RESERVED!</font>
+                                        <% else %>
+						<% @atFoosball = booking.name %>
+						<%@hasBooking = true%>
+                                		<%@curBooking = booking%>
+					<% end %>
 				<%end%>
 			<%end%>
 		<%end%>

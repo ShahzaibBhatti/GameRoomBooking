@@ -7,16 +7,16 @@ class BookingsController < ApplicationController
 	def create
 		@booking = Booking.new(params[:booking].permit(:station, :name, :time))
 		if @booking.save
-			redirect_to @booking
+			redirect_to bookings_path
 		else
 			render 'new'
 		end
 	end
-
+	
 	def destroy
 		@booking = Booking.find(params[:id])
 		@booking.destroy
-
+		
 		redirect_to bookings_path
 	end
 
