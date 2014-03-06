@@ -3,11 +3,17 @@
 <br> 
 <table border="1">
   <tr>
-    <th>Arcade</th>
-    <th>Pool</th>
-    <th>Foosball</th>
     <th>Time</th>
-    <th>Show</th>
+    <th></th>
+    <th>Arcade</th>
+    <th>Edit</>
+    <th>Delete</>
+    <th></th>
+    <th>Pool</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    <th></th>
+    <th>Foosball</th>
     <th>Edit</th>
     <th>Delete</th>
   </tr>
@@ -17,7 +23,12 @@
 	<% for j in 0..3 %>
 	<% @counter = @counter + 1 %>
 	  <tr>
-		<% @hasBooking = false %>
+		<% if j == 0 %>
+                        <td><%=i%>:00</td>
+                <% else %>
+                        <td><%=i%>:<%=j*15%></td>
+                <% end %>
+		<td></td>
 		<% @atArcade = "" %>
 		<% @atPool = "" %>
 		<% @atFoosball = "" %>
@@ -29,48 +40,60 @@
 						<font size="10" color="red">TIME IS ALREADY RESERVED!</font> 
 					<% else %>
 						<% @atArcade = booking.name  %>
-						<%@hasBooking = true%>
-                                		<%@curBooking = booking%>
+                                		<%@curArcade = booking%>
 					<% end %>
 				<% elsif booking.station == "Pool" %>
 					<% if @atPool != "" %>
-						% booking.delete %>
+						<% booking.delete %>
                                                 <font size="10" color="red">TIME IS ALREADY RESERVED!</font>
                                         <% else %>
 						<% @atPool = booking.name %>
-						<%@hasBooking = true%>
-                                		<%@curBooking = booking%>
+                                		<%@curPool = booking%>
 					<% end %>
 				<% else %>
 					<% if @atFoosball != "" %>
-						% booking.delete %>
+						<% booking.delete %>
                                                 <font size="10" color="red">TIME IS ALREADY RESERVED!</font>
                                         <% else %>
-						<% @atFoosball = booking.name %>
-						<%@hasBooking = true%>
-                                		<%@curBooking = booking%>
+						<%@atFoosball = booking.name %>
+                                		<%@curFoosball = booking%>
 					<% end %>
 				<%end%>
 			<%end%>
 		<%end%>
-	  	  <td><%= @atArcade %></td>
-          	  <td><%= @atPool %></td>
-		  <td><%= @atFoosball %></td>
-		  <% if j == 0 %>
-			<td><%=i%>:00</td>
-		  <% else %>
-			<td><%=i%>:<%=j*15%></td>
-		  <% end %>
-		  <% if @hasBooking == true %>
-			<td><%= link_to 'Show', @curBooking %></td>
-      			<td><%= link_to 'Edit', edit_booking_path(@curBooking) %></td>
-      			<td><%= link_to 'Delete', booking_path(@curBooking),
+		  <% if @atArcade != "" %>
+	  	  <td><%= link_to @atArcade, @curArcade %></td>
+		  <td><%= link_to 'Edit', edit_booking_path(@curArcade) %></td>
+                  <td><%= link_to 'Delete', booking_path(@curArcade),
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
-		  <%else%>
-			<td></td>
-			<td></td>
-			<td></td>
+		  <% else %>
+		  <td></td>
+		  <td></td>
+		  <td></td>
 		  <%end%>
+		  <th></th>
+		  <% if @atPool != "" %>
+                  <td><%= link_to @atPool, @curPool %></td>
+                  <td><%= link_to 'Edit', edit_booking_path(@curPool) %></td>
+                  <td><%= link_to 'Delete', booking_path(@curPool),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  <% else %>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <%end%>
+		  <th></th>
+		  <% if @atFoosball != "" %>
+                  <td><%= link_to @atFoosball, @curFoosball %></td>
+                  <td><%= link_to 'Edit', edit_booking_path(@curFoosball) %></td>
+                  <td><%= link_to 'Delete', booking_path(@curFoosball),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  <% else %>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <%end%>
+		  
 	  </tr>
 	<%end%>
   <%end%>
