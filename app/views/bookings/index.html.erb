@@ -64,7 +64,7 @@
 		  <% if @hasBooking == true %>
 			<td><%= link_to 'Show', @curBooking %></td>
       			<td><%= link_to 'Edit', edit_booking_path(@curBooking) %></td>
-      			<td><%= link_to 'Destroy', booking_path(@curBooking),
+      			<td><%= link_to 'Delete', booking_path(@curBooking),
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
 		  <%else%>
 			<td></td>
