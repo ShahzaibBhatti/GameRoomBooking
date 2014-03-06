@@ -1,0 +1,59 @@
+<h1>Listing bookings</h1>
+<%= link_to 'New Booking', new_booking_path %> 
+<table border="1">
+  <tr>
+    <th>Arcade</th>
+    <th>Pool</th>
+    <th>Foosball</th>
+    <th>Time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @counter = 0 %>
+  <% for i in 9..17  %>
+	<% for j in 0..3 %>
+	<% @counter = @counter + 1 %>
+	  <tr>
+		<% @hasBooking = false %>
+		<% @atArcade = "" %>
+		<% @atPool = "" %>
+		<% @atFoosball = "" %>
+		<% @bookings.each do |booking| %>
+			<% if booking.time.to_s == (@counter - 1).to_s %>
+				<%@hasBooking = true%>
+				<%@curBooking = booking%>
+				<% if booking.station == "Arcade" %>
+					<% @atArcade = booking.name  %>
+				<% elsif booking.station == "Pool" %>
+					<% @atPool = booking.name %>
+				<% else %>
+					<% @atFoosball = booking.name %>
+				<%end%>
+			<%end%>
+		<%end%>
+	  	  <td><%= @atArcade %></td>
+          	  <td><%= @atPool %></td>
+		  <td><%= @atFoosball %></td>
+		  <% if j == 0 %>
+			<td><%=i%>:00</td>
+		  <% else %>
+			<td><%=i%>:<%=j*15%></td>
+		  <% end %>
+		  <% if @hasBooking == true %>
+			<td><%= link_to 'Show', @curBooking %></td>
+      			<td><%= link_to 'Edit', edit_booking_path(@curBooking) %></td>
+      			<td><%= link_to 'Destroy', booking_path(@curBooking),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		  <%else%>
+			<td></td>
+			<td></td>
+			<td></td>
+		  <%end%>
+	  </tr>
+	<%end%>
+  <%end%>
+</table>
+
+ 
