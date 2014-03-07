@@ -49,7 +49,9 @@
 				<% if booking.station == "Arcade" %>
 					<% if @atArcade != @null %> 
 						<% booking.delete %>
-						<font size="10" color="red">TIME IS ALREADY RESERVED!</font> 
+						<div class="alert alert-danger">
+               <strong>Error!</strong> Time already reserved.
+            </div>
 					<% else %>
 						<% @atArcade = booking.name  %>
                                 		<%@curArcade = booking%>

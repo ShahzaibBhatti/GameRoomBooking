@@ -19,5 +19,5 @@
 <h2>Add a comment:</h2>
 <%= render "comments/form" %>
  
-<%= link_to 'Edit Booking', edit_booking_path(@booking) %> |
-<%= link_to 'Back to Bookings', bookings_path %>
+<%= link_to 'Edit Booking', edit_booking_path(@booking), :class => "btn btn-info active"  %> 
+<%= link_to 'Back to Bookings', bookings_path, :class => "btn btn-warning active"  %>

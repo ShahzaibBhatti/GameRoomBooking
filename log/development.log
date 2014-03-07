@@ -32975,3 +32975,1731 @@ Processing by BookingsController#show as HTML
   Rendered layouts/_navigation.html.erb (0.7ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookings/48" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = ? LIMIT 1  [["id", "48"]]
+  [1m[36mComment Load (8.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."booking_id" = ?[0m  [["booking_id", 48]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html (49.1ms)
+  Rendered bookings/show.html.erb within layouts/application (90.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 276ms (Views: 251.0ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:41:07 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 11:41:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-03-07 11:41:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.1ms)
+
+
+Started GET "/starter-template.css" for 127.0.0.1 at 2014-03-07 11:41:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/starter-template.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/dist/css/bootstrap.min.css" for 127.0.0.1 at 2014-03-07 11:41:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dist/css/bootstrap.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.9ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:41:12 -0500
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings"
+  Rendered bookings/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:41:13 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (4.9ms)
+  Rendered bookings/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:41:16 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookings/48/edit" for 127.0.0.1 at 2014-03-07 11:41:17 -0500
+Processing by BookingsController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = ? LIMIT 1  [["id", "48"]]
+  Rendered bookings/_form.html.erb (3.3ms)
+  Rendered bookings/edit.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:41:18 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookings/48" for 127.0.0.1 at 2014-03-07 11:41:20 -0500
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = ? LIMIT 1  [["id", "48"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."booking_id" = ?[0m  [["booking_id", 48]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html (2.3ms)
+  Rendered bookings/show.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookings/48" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = ? LIMIT 1  [["id", "48"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."booking_id" = ?[0m  [["booking_id", 48]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html (1.7ms)
+  Rendered bookings/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:39 -0500
+
+
+Started GET "/bookings/48" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = ? LIMIT 1  [["id", "48"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."booking_id" = ?[0m  [["booking_id", 48]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html (1.6ms)
+  Rendered bookings/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:43:44 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 11:43:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starter-template.css" for 127.0.0.1 at 2014-03-07 11:43:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/starter-template.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.1ms)
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-03-07 11:43:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.1ms)
+
+
+Started GET "/dist/css/bootstrap.min.css" for 127.0.0.1 at 2014-03-07 11:43:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dist/css/bootstrap.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:43:48 -0500
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings"
+  Rendered bookings/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:43:49 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (3.0ms)
+  Rendered bookings/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:43:51 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bookings/48/edit" for 127.0.0.1 at 2014-03-07 11:43:52 -0500
+Processing by BookingsController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = ? LIMIT 1  [["id", "48"]]
+  Rendered bookings/_form.html.erb (3.5ms)
+  Rendered bookings/edit.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:43:53 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bookings/48" for 127.0.0.1 at 2014-03-07 11:43:54 -0500
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = ? LIMIT 1  [["id", "48"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."booking_id" = ?[0m  [["booking_id", 48]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html (1.9ms)
+  Rendered bookings/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:43:56 -0500
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings"
+  Rendered bookings/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:44:05 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (2.9ms)
+  Rendered bookings/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P109MRgmNLSdXxnpje/RaYbhioK+HCGo2ZjEt7WffbQ=", "booking"=>{"station"=>"Arcade", "name"=>"Patrick", "time"=>"0"}, "commit"=>"Create Booking"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.2ms)[0m  INSERT INTO "bookings" ("created_at", "name", "station", "time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 07 Mar 2014 16:44:12 UTC +00:00], ["name", "Patrick"], ["station", "Arcade"], ["time", "0"], ["updated_at", Fri, 07 Mar 2014 16:44:12 UTC +00:00]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/bookings
+Completed 302 Found in 17ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings"
+  [1m[36mSQL (1.4ms)[0m  [1mDELETE FROM "bookings" WHERE "bookings"."id" = 49[0m
+  Rendered bookings/index.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:44:12 -0500
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings"
+  Rendered bookings/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:15 -0500
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:45:17 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (4.4ms)
+  Rendered bookings/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P109MRgmNLSdXxnpje/RaYbhioK+HCGo2ZjEt7WffbQ=", "booking"=>{"station"=>"Arcade", "name"=>"Patrick", "time"=>"0"}, "commit"=>"Create Booking"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "bookings" ("created_at", "name", "station", "time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 07 Mar 2014 16:45:21 UTC +00:00], ["name", "Patrick"], ["station", "Arcade"], ["time", "0"], ["updated_at", Fri, 07 Mar 2014 16:45:21 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/bookings
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings"
+  [1m[36mSQL (1.3ms)[0m  [1mDELETE FROM "bookings" WHERE "bookings"."id" = 50[0m
+  Rendered bookings/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:45:21 -0500
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings"
+  Rendered bookings/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:13 -0500
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:20 -0500
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:46:22 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (2.8ms)
+  Rendered bookings/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2014-03-07 11:46:25 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P109MRgmNLSdXxnpje/RaYbhioK+HCGo2ZjEt7WffbQ=", "booking"=>{"station"=>"Arcade", "name"=>"Patrick", "time"=>"0"}, "commit"=>"Create Booking"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bookings" ("created_at", "name", "station", "time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Mar 2014 16:46:25 UTC +00:00], ["name", "Patrick"], ["station", "Arcade"], ["time", "0"], ["updated_at", Fri, 07 Mar 2014 16:46:25 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/bookings
+Completed 302 Found in 3ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:46:25 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM "bookings" WHERE "bookings"."id" = 51
+  Rendered bookings/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:25 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:25 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:46:26 -0500
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:47:58 -0500
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:48:11 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (2.7ms)
+  Rendered bookings/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P109MRgmNLSdXxnpje/RaYbhioK+HCGo2ZjEt7WffbQ=", "booking"=>{"station"=>"Arcade", "name"=>"Patrick", "time"=>"0"}, "commit"=>"Create Booking"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bookings" ("created_at", "name", "station", "time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Mar 2014 16:48:15 UTC +00:00], ["name", "Patrick"], ["station", "Arcade"], ["time", "0"], ["updated_at", Fri, 07 Mar 2014 16:48:15 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/bookings
+Completed 302 Found in 3ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "bookings" WHERE "bookings"."id" = 52
+  Rendered bookings/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:48:15 -0500
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:14 -0500
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:49:15 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (3.2ms)
+  Rendered bookings/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P109MRgmNLSdXxnpje/RaYbhioK+HCGo2ZjEt7WffbQ=", "booking"=>{"station"=>"Arcade", "name"=>"Patrick", "time"=>"0"}, "commit"=>"Create Booking"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bookings" ("created_at", "name", "station", "time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Mar 2014 16:49:18 UTC +00:00], ["name", "Patrick"], ["station", "Arcade"], ["time", "0"], ["updated_at", Fri, 07 Mar 2014 16:49:18 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/bookings
+Completed 302 Found in 3ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "bookings" WHERE "bookings"."id" = 53
+  Rendered bookings/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:18 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:19 -0500
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:19 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:19 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-07 11:49:19 -0500
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:49:34 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (2.4ms)
+  Rendered bookings/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 11:49:36 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starter-template.css" for 127.0.0.1 at 2014-03-07 11:49:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/starter-template.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.3ms)
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-03-07 11:49:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/dist/css/bootstrap.min.css" for 127.0.0.1 at 2014-03-07 11:49:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dist/css/bootstrap.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/dx066-xl/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/dx066-xl/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2014-03-07 11:59:08 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings"[0m
+  Rendered bookings/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2014-03-07 11:59:10 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (2.8ms)
+  Rendered bookings/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
