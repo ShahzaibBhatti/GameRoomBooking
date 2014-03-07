@@ -50,7 +50,7 @@
 					<% if @atArcade != @null %> 
 						<% booking.delete %>
 						<div class="alert alert-danger">
-               <strong>Error!</strong> Time already reserved.
+               <strong>Error!</strong> Time already reserved. Your booking has been removed.
             </div>
 					<% else %>
 						<% @atArcade = booking.name  %>
@@ -59,7 +59,9 @@
 				<% elsif booking.station == "Pool" %>
 					<% if @atPool != @null %>
 						<% booking.delete %>
-                                                <font size="10" color="red">TIME IS ALREADY RESERVED!</font>
+                                                <div class="alert alert-danger">
+               <strong>Error!</strong> Time already reserved.
+            </div>
                                         <% else %>
 						<% @atPool = booking.name %>
                                 		<%@curPool = booking%>
@@ -67,7 +69,9 @@
 				<% else %>
 					<% if @atFoosball != @null %>
 						<% booking.delete %>
-                                                <font size="10" color="red">TIME IS ALREADY RESERVED!</font>
+                                                <div class="alert alert-danger">
+               <strong>Error!</strong> Time already reserved.
+            </div>
                                         <% else %>
 						<%@atFoosball = booking.name %>
                                 		<%@curFoosball = booking%>

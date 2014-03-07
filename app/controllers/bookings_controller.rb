@@ -36,7 +36,7 @@ class BookingsController < ApplicationController
 		@booking = Booking.find(params[:id])
 
 		if @booking.update(params[:booking].permit(:station, :name, :time))
-    			redirect_to @booking
+    			redirect_to bookings_path
   		else
     			render 'edit'
   		end
