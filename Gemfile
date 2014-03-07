@@ -5,6 +5,9 @@ group :development do
   gem 'rails_layout'
 end
 
+# Devise gem for authentication
+gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 

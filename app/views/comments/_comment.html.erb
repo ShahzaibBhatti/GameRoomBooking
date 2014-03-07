@@ -9,8 +9,10 @@
 </p>
 
 <p>
-  <%= link_to 'Delete Comment', [comment.booking, comment],
+  <% if (current_user.email == comment.commenter) %>
+  	<%= link_to 'Delete Comment', [comment.booking, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' },
-               :class => "btn btn-danger %>
+               :class => "btn btn-danger" %>
+  <%end%>
 </p>

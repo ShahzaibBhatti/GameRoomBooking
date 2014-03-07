@@ -1,5 +1,6 @@
 Gameroom::Application.routes.draw do
    
+  devise_for :users
   resources :bookings do
 	resources :comments
   end
